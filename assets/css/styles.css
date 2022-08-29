@@ -132,3 +132,30 @@ header::before {
   color: var(--primary-color-contrast);
 }
 
+/* personagens do mundo*/
+.world-characters {
+  width: 100%;
+  max-width: 900px;
+  position: absolute;
+}
+
+/*  pegando o id da div com #eonome do id*/
+.world-characters#top-characters{
+  height: 100%;
+  background-color: var(--character-top-image-color);
+
+  mask: var(--character-top-image-src) bottom / contain no-repeat;
+  -webkit-mask: var(--character-top-image-src) bottom / contain no-repeat;
+
+}
+
+.world-characters#bottom-characters {
+  height: 500px;
+  background-color: var(--character-bottom-image-color);
+  top: 3px;
+  transform: rotate(180deg) scaleX(-1);
+  position: relative;
+
+  mask: var(--character-bottom-image-src) bottom / contain no-repeat;
+  -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
+}
