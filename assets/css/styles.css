@@ -143,6 +143,7 @@ header::before {
 .world-characters#top-characters{
   height: 100%;
   background-color: var(--character-top-image-color);
+  bottom: -3px;
 
   mask: var(--character-top-image-src) bottom / contain no-repeat;
   -webkit-mask: var(--character-top-image-src) bottom / contain no-repeat;
@@ -159,3 +160,38 @@ header::before {
   mask: var(--character-bottom-image-src) bottom / contain no-repeat;
   -webkit-mask: var(--character-bottom-image-src) bottom / 100% no-repeat;
 }
+
+/* padronização do main */
+main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+/* SECTION STYLE */
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 95px;
+} 
+
+/* Section #1 Invert world */
+.container {
+  max-width: 1200px;
+}
+
+#section-inverted-world {
+  align-items: center;
+}
+
+#section-inverted-world .section-texts {
+  width: 50%;
+}
+
+#section-inverted-world .section-texts h2 {
+  max-width: 300px;
+}
+
+
+/*  estilo da segunda sessions*/
