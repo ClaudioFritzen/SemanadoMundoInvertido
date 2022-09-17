@@ -48,7 +48,8 @@
   --footer-background-color: #000;
 }
 
-/***  Tags genericas ***/
+
+/***  Tags genericas 1;32 ***/
 *{
   margin: 0;
   box-sizing: border-box;
@@ -83,6 +84,8 @@ button {
 
 }
 
+
+/* header style */
 header {
   background-color: var(--header-background-color);
   min-height: 850;
@@ -146,7 +149,7 @@ header::before {
   bottom: -3px;
 
   mask: var(--character-top-image-src) bottom / contain no-repeat;
-  -webkit-mask: var(--character-top-image-src) bottom / contain no-repeat;
+  -webkit-mask: var(--character-top-image-src) bottom / 100% no-repeat;
 
 }
 
@@ -194,4 +197,9 @@ section {
 }
 
 
-/*  estilo da segunda sessions*/
+/*  estilo da segunda session parte do video e o texto ao lado */
+
+#section-stranger-things-trailer .section-text {
+  width: 50%;
+  text-align: right;
+}
