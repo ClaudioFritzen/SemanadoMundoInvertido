@@ -203,3 +203,8 @@ section {
   width: 50%;
   text-align: right;
 }
+
+#section-stranger-things-trailer .section-text h2 {
+  max-width: 425px;
+  
+}
