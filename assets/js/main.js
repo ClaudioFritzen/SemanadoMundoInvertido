@@ -1,8 +1,3 @@
-import app from "./firebase/app.js"
-
-import { subscriptionToHellfireClub } from "./firebase/hellfire.js"
-
-console.log(app)
 
 const txtName = document.getElementById('txtName')
 const txtEmail = document.getElementById('txtEmail')
@@ -20,6 +15,7 @@ bntSubscribe.addEventListener('click', () => {
         character: txtCharacter.value
     }
     // salvar no banco de dados
-    subscriptionToHellfireClub(subscription)
+   // subscriptionToHellfireClub(subscription)
+    console.log(subscription)
 })
 
