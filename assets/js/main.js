@@ -18,6 +18,13 @@ bntSubscribe.addEventListener('click', async () => {
     // salvar no banco de dados
    const subscriptionId = await subscribeToHellFireClub(subscription)
    console.log('Inscrito com sucesso: ${subscriptionId}')
+
+   // limpando as caixas de texto apos inscrição
+   txtName.value = ""
+   txtEmail.value = ''
+   txtLevel.value = ''
+   txtCharacter.value = ''
+
    
 })
 
