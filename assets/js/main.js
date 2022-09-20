@@ -1,7 +1,7 @@
-import app from "./firebase/app.js"
+
 import { subscribeToHellFireClub } from "./firebase/hellfire.js"
 
-console.log(app)
+//console.log(app)
 
 const txtName = document.getElementById('txtName')
 const txtEmail = document.getElementById('txtEmail')
