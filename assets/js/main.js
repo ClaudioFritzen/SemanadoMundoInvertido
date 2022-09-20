@@ -1,7 +1,4 @@
-
 import { subscribeToHellFireClub } from "./firebase/hellfire.js"
-
-//console.log(app)
 
 const txtName = document.getElementById('txtName')
 const txtEmail = document.getElementById('txtEmail')
@@ -11,7 +8,7 @@ const bntSubscribe = document.getElementById('bntSubscribe')
 /* 
 debugger */
 
-bntSubscribe.addEventListener('click', () => {
+bntSubscribe.addEventListener('click', async () => {
     const subscription ={
         name: txtName.value,
         email: txtEmail.value,
@@ -19,7 +16,8 @@ bntSubscribe.addEventListener('click', () => {
         character: txtCharacter.value
     }
     // salvar no banco de dados
-   subscribeToHellFireClub(subscription)
+   const subscriptionId = await subscribeToHellFireClub(subscription)
+   console.log('Inscrito com sucesso: ${subscriptionId}')
    
 })
 
